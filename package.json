@@ -1,6 +1,6 @@
 {
   "name": "reactpub-blog-basic-theme",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A basic blog theme for reactpub",
   "main": "index.js",
   "scripts": {
