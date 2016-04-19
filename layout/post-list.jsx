@@ -6,7 +6,7 @@ const marked = require('marked');
 const moment = require('moment');
 const reactCssModules = require('react-css-modules');
 
-const data = require('reactpub/settings.js').get('data');
+const data = require('../theme.js').settings.get('data');
 const postListCss = require('./post-list.css');
 const PostTags = require('./post-tags.jsx');
 

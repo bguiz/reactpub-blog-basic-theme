@@ -8,7 +8,7 @@ const Navbar = require('./layout/navbar.jsx');
 const FootProfile = require('./layout/foot-profile.jsx');
 const Footbar = require('./layout/footbar.jsx');
 
-const config = require('reactpub/settings.js').get('config');
+const config = require('./theme.js').settings.get('config');
 
 require('reset-css/reset.css');
 require('./root.css');

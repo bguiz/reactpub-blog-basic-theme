@@ -2,7 +2,7 @@
   "name": "reactpub-blog-basic-theme",
   "version": "0.1.0",
   "description": "A basic blog theme for reactpub",
-  "main": "index.js",
+  "main": "theme.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,10 +22,15 @@
     "url": "https://github.com/bguiz/reactpub-blog-basic-theme/issues"
   },
   "peerDependencies": {
+    "copy-webpack-plugin": "^1.1.1",
+    "css-loader": "^0.23.1",
     "font-awesome": "^4.5.0",
+    "extract-text-webpack-plugin": "^1.0.1",
     "highlight.js": "^9.3.0",
+    "jsx-loader": "^0.13.2",
     "marked": "^0.3.5",
     "moment": "~2.5.1",
+    "postcss-loader": "^0.8.2",
     "react": "^0.14.8",
     "react-css-modules": "^3.7.6",
     "react-disqus-thread": "^0.3.1",

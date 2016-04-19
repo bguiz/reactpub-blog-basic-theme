@@ -4,7 +4,7 @@ const React = require('react');
 const ReactRouter = require('react-router');
 const Helmet = require('react-helmet');
 
-const data = require('reactpub/settings.js').get('data');
+const data = require('../theme.js').settings.get('data');
 
 let Link = ReactRouter.Link;
 
