@@ -5,8 +5,8 @@ const ReactRouter = require('react-router');
 const Helmet = require('react-helmet');
 
 const PostList = require('../layout/post-list.jsx');
-const data = require('reactpub/settings.js').get('data');
-const config = require('reactpub/settings.js').get('config');
+const data = require('../theme.js').settings.get('data');
+const config = require('../theme.js').settings.get('config');
 
 let Link = ReactRouter.Link;
 

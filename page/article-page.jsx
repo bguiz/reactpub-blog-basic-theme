@@ -11,8 +11,8 @@ const Markdown = require('../layout/markdown.jsx');
 const PostTags = require('../layout/post-tags.jsx');
 const DisqusComments = require('../layout/disqus-comments.jsx');
 const ShareButtons = require('../layout/share-buttons.jsx');
-const data = require('reactpub/settings.js').get('data');
-const config = require('reactpub/settings.js').get('config');
+const data = require('../theme.js').settings.get('data');
+const config = require('../theme.js').settings.get('config');
 const articlePageCss = require('./article-page.css');
 
 let ArticlePage = React.createClass({

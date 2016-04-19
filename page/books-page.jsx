@@ -5,7 +5,7 @@ const Helmet = require('react-helmet');
 const reactCssModules = require('react-css-modules');
 
 const booksPageCss = require('./books-page.css');
-const data = require('reactpub/settings.js').get('data');
+const data = require('../theme.js').settings.get('data');
 
 let BooksPage = React.createClass({
   render() {

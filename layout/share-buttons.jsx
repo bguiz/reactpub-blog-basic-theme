@@ -4,7 +4,7 @@ const React = require('react');
 const ReactShare = require('react-share');
 const reactCssModules = require('react-css-modules');
 
-const config = require('reactpub/settings.js').get('config');
+const config = require('../theme.js').settings.get('config');
 const shareButtonsCss = require('./share-buttons.css');
 
 const ReactShareButtons = ReactShare.ShareButtons;

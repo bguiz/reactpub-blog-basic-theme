@@ -22,7 +22,6 @@ let Routes = (
   <Route path="/" component={Root}>
     <IndexRoute component={IndexPage} />
     <Route path="page/:pageId" component={PaginationPage} />
-    <Route path=":year/:month/:day/:slug" component={PostPage} />
     <Route path="post/:tumblrId/:slug" component={AliasPostPage} />
     <Route path="tags/:tagId" component={TagPage} />
     <Route path="archives" component={ArchivePage} />
@@ -30,6 +29,9 @@ let Routes = (
     <Route path="books" component={BooksPage} />
     <Route path="articles/*" component={ArticlePage} />
     <Route path="404.html" component={Four04Page} />
+    <Route path=":year/:month/:day/:slug" component={PostPage} />
+    <Route path=":year/:month/:slug" component={PostPage} />
+    <Route path=":year/:slug" component={PostPage} />
   </Route>
 );
 

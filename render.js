@@ -5,8 +5,8 @@ const reactHelmet = require('react-helmet');
 const reactGa = require('react-ga');
 
 function themeRender() {
-  const config = require('reactpub/settings').get('config');
-  const data = require('reactpub/settings').get('data');
+  const config = require('./theme.js').settings.get('config');
+  const data = require('./theme.js').settings.get('data');
   const routes = require('./routes.jsx');
 
   function routerOnUpdate() {
