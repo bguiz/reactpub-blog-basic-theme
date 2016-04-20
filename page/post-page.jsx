@@ -19,6 +19,11 @@ let Link = ReactRouter.Link;
 let PostPage = React.createClass({
   render() {
     let post = this.getPostData();
+    let postHeadImage = (!!post.meta.image ?
+      <img
+        src={post.meta.image}
+        alt={post.meta.title} /> :
+      undefined);
     return (
       <div id="page-post" className="page page-post">
         <Helmet
@@ -29,6 +34,7 @@ let PostPage = React.createClass({
         <h1 id="page-title" styleName="page-title">{post.meta.title}</h1>
         <div id="page-body" className="page-body">
           <div styleName="post-date">{post.meta.displayDate}</div>
+          { postHeadImage }
           <Markdown
             markdown={post.body}
             src={post.meta.src}/>
