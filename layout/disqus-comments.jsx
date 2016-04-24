@@ -3,15 +3,14 @@
 const React = require('react');
 const ReactDisqusThread = require('react-disqus-thread');
 
-const DISQUS_ID = 'bguiz';
-const BASE_URL = 'http://blog.bguiz.com'
+const config = require('../theme.js').settings.get('config');
 
 let DisqusComments = React.createClass({
   render() {
-    let url = `${BASE_URL}${this.props.location.pathname}`;
+    let url = `${config.baseUrl}${this.props.location.pathname}`;
     return (
       <ReactDisqusThread
-        shortname={DISQUS_ID}
+        shortname={config.disqusId}
         identifier={url}
         title={this.props.post.meta.title}
         url={url} />

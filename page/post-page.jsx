@@ -8,6 +8,7 @@ const moment = require('moment');
 
 const Markdown = require('../layout/markdown.jsx');
 const PostTags = require('../layout/post-tags.jsx');
+const PostEdit = require('../layout/post-edit.jsx');
 const DisqusComments = require('../layout/disqus-comments.jsx');
 const ShareButtons = require('../layout/share-buttons.jsx');
 const data = require('../theme.js').settings.get('data');
@@ -37,7 +38,7 @@ let PostPage = React.createClass({
           { postHeadImage }
           <Markdown
             markdown={post.body}
-            src={post.meta.src}/>
+            src={post.meta.src} />
         </div>
         <div id="page-footer" className="page-footer">
           <ShareButtons
@@ -46,6 +47,9 @@ let PostPage = React.createClass({
           <div>
             <span>Tagged in:</span>
             <PostTags post={post} />
+          </div>
+          <div>
+            <PostEdit post={post} />
           </div>
           <div>
             <DisqusComments
