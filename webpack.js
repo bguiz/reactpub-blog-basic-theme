@@ -43,9 +43,13 @@ function getWebpackConfig(options) {
     test: /.jsx?$/,
     loader: 'babel-loader',
     query: {
+      cacheDirectory: true,
       presets: [
-        'babel-preset-react',
-        'babel-preset-es2015'
+        'babel-preset-es2015',
+        'babel-preset-react'
+      ],
+      plugins: [
+        'babel-plugin-transform-object-assign'
       ]
     }
   });
