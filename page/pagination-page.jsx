@@ -10,7 +10,7 @@ const PostTags = require('../layout/post-tags.jsx');
 const paginationPageCss = require('./pagination-page.css');
 const data = require('../theme.js').settings.get('data');
 
-const SUMMARY_TRUNCATE_LENGTH = 350;
+const SUMMARY_TRUNCATE_LENGTH = 500;
 let Link = ReactRouter.Link;
 
 let PaginationPage = React.createClass({
@@ -108,9 +108,24 @@ let PaginationPage = React.createClass({
       return data.props.routes[url];
     });
     let summaries = pages.map((page) => {
-      return page.body.substring(
-        0,
-        Math.min(page.body.length, SUMMARY_TRUNCATE_LENGTH));
+      let morePosition = page.body.indexOf('<!-- more -->');
+      if (morePosition < 0) {
+        // when there is no explicitly specified fold,
+        // we find the first new line character that occurs
+        // after the default truncate length,
+        // and use that as the fold position
+        morePosition = Math.min(
+          page.body.length,
+          SUMMARY_TRUNCATE_LENGTH);
+        let nextNewlinePosition = page.body.indexOf('\n', morePosition);
+        if (nextNewlinePosition < 0) {
+          nextNewlinePosition = page.body.length - 1;
+        }
+        morePosition = Math.max(
+          morePosition,
+          nextNewlinePosition);
+      }
+      return page.body.substring(0, morePosition);
     });
     let hasPrevious = (id - 1 > 0);
     let hasNext = (id < data.props.pagination.length);

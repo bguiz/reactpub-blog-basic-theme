@@ -46,7 +46,6 @@ let Markdown = React.createClass({
 
   getMarkup(markdown) {
     let markup = marked(
-      // '### sub3 heading\n\nThis is **bold** and *italic*.',
       markdown,
       {
         sanitize: false,
