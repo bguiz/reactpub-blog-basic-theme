@@ -73,7 +73,7 @@ let PostPage = React.createClass({
     }
     post.meta.displayDate =
       moment(post.meta.date)
-        .zone('+08:00')
+        .utcOffset('+08:00')
         .format('YYYY/MM/DD');
     let title =
       ((post.meta.title && `${post.meta.title} - ${config.siteName}`) ||

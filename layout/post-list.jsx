@@ -41,7 +41,7 @@ let PostList = React.createClass({
       let post = data.props.routes[url];
       post.meta.displayDate =
         moment(post.meta.date)
-          .zone('+08:00')
+          .utcOffset('+08:00')
           .format('YYYY/MM/DD');
       return post;
     }).sort((postA, postB) => {

@@ -33,7 +33,7 @@
     "highlight.js": "^9.3.0",
     "jsx-loader": "^0.13.2",
     "marked": "^0.3.5",
-    "moment": "~2.13.0",
+    "moment": "^2.13.0",
     "postcss-loader": "^0.8.2",
     "react": "^0.14.8",
     "react-css-modules": "^3.7.6",
