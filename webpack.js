@@ -40,6 +40,16 @@ function getWebpackConfig(options) {
 
   let loaders = webpackConfig.module.loaders;
   loaders.push({
+    test: /.jsx?$/,
+    loader: 'babel-loader',
+    query: {
+      presets: [
+        'babel-preset-react',
+        'babel-preset-es2015'
+      ]
+    }
+  });
+  loaders.push({
     test: /\.css$/,
     loader: extractTextPlugin.extract(
       'css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]'),
