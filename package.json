@@ -1,6 +1,6 @@
 {
   "name": "reactpub-blog-basic-theme",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "A basic blog theme for reactpub",
   "main": "theme.js",
   "scripts": {
@@ -45,7 +45,7 @@
     "react-router": "^2.0.1",
     "react-share": "^1.5.0",
     "reset-css": "^2.0.2011012603",
-    "reactpub": "^0.8.0"
+    "reactpub": "^0.8.1"
   },
   "homepage": "https://github.com/bguiz/reactpub-blog-basic-theme#readme",
   "dependencies": {
