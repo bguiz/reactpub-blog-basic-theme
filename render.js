@@ -30,7 +30,7 @@ function themeRender() {
   };
 
   return reactpubEntry({
-    reactOnClient: true,
+    reactOnClient: config.reactOnClient,
     reactHelmet,
     reactGa,
     reactGaOptions,
