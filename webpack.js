@@ -42,6 +42,14 @@ function getWebpackConfig(options) {
   loaders.push({
     test: /.jsx?$/,
     loader: 'babel-loader',
+    exclude: function(absPath) {
+      if (!absPath.match(/node_modules/)) {
+        // We include anything that is not in node_modules
+        return false;
+      }
+      // We include reactpub and reactpub themes
+      return (!absPath.match(/node_modules\/reactpub/));
+    },
     query: {
       cacheDirectory: true,
       presets: [
