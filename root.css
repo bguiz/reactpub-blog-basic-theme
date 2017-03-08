@@ -59,13 +59,18 @@ strong {
 
 :global .page {
   margin-top: 6em;
-  margin-right: 20px;
+  margin-right: auto;
   margin-bottom: 3em;
-  margin-left: 20px;
+  margin-left: auto;
   font-family: 'Open Sans',sans-serif;
-  font-size: 16px;
+  font-size: 1.2em;
   line-height: 1.15em;
   color: #282828;
+  max-width: 36em;
+}
+
+:global .page-body img {
+  max-width: 100%;
 }
 
 :global .page-footer {
