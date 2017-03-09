@@ -19,7 +19,8 @@ let PostList = React.createClass({
       <ul styleName="post-list">
         {posts.map((post) => {
           return (
-            <li styleName="post-list-item"
+            <li
+              styleName="post-list-item"
               key={post.meta.url}>
               <div styleName="post-list-date">{post.meta.displayDate}</div>
               <div styleName="post-list-title">

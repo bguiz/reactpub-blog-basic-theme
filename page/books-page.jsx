@@ -22,7 +22,7 @@ let BooksPage = React.createClass({
           Books by Brendan Graetz
         </h1>
         <div id="page-body" className="page-body">
-          <ul>
+          <ul styleName="book-list">
             {books.map((book) => {
               return (
                 <li
@@ -78,5 +78,3 @@ let BooksPage = React.createClass({
 });
 
 module.exports = reactCssModules(BooksPage, booksPageCss);
-
-

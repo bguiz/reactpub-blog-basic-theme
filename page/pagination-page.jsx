@@ -26,7 +26,9 @@ let PaginationPage = React.createClass({
           {pagination.title}
         </h1>
         <div id="page-body" className="page-body">
-          <ul className="pagination-list">
+          <ul
+            className="pagination-list"
+            styleName="pagination-list">
           {pagination.pages.map((page, index) => {
             let url = page.meta.url;
             let summary = pagination.summaries[index];

@@ -53,7 +53,7 @@ let Markdown = React.createClass({
         smartLists: true,
         // highlight: function (code) {
         //   return highlightJs.highlightAuto(code).value;
-        // }
+        // },
       }
     );
     markup = {

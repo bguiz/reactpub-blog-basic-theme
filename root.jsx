@@ -4,14 +4,14 @@ const React = require('react');
 const ReactRouter = require('react-router');
 const Helmet = require('react-helmet');
 
+require('reset-css/reset.css');
+require('./root.css');
+
 const Navbar = require('./layout/navbar.jsx');
 const FootProfile = require('./layout/foot-profile.jsx');
 const Footbar = require('./layout/footbar.jsx');
 
 const config = require('./theme.js').settings.get('config');
-
-require('reset-css/reset.css');
-require('./root.css');
 
 let Link = ReactRouter.Link;
 

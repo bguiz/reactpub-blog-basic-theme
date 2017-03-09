@@ -23,7 +23,9 @@ let PostPage = React.createClass({
     let postHeadImage = (!!post.meta.image ?
       <img
         src={post.meta.image}
-        alt={post.meta.title} /> :
+        alt={post.meta.title}
+        id="post-headImage"
+        styleName="post-headImage" /> :
       undefined);
     return (
       <div id="page-post" className="page page-post">
@@ -32,7 +34,10 @@ let PostPage = React.createClass({
           link={post.header.link}
           title={post.header.title}>
         </Helmet>
-        <h1 id="page-title" styleName="page-title">{post.meta.title}</h1>
+        <h1
+          id="page-title"
+          className="page-title"
+          styleName="page-title">{post.meta.title}</h1>
         <div id="page-body" className="page-body">
           <div styleName="post-date">{post.meta.displayDate}</div>
           { postHeadImage }

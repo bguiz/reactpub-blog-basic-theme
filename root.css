@@ -59,18 +59,25 @@ strong {
 
 :global .page {
   margin-top: 6em;
-  margin-right: auto;
   margin-bottom: 3em;
-  margin-left: auto;
+  margin-right: 0;
+  margin-left: 0;
+  max-width: 100%;
   font-family: 'Open Sans',sans-serif;
   font-size: 1.2em;
   line-height: 1.15em;
   color: #282828;
-  max-width: 36em;
 }
 
-:global .page-body img {
-  max-width: 100%;
+:global .page-title {
+  margin-top: 1.2em;
+  margin-bottom: 1.2em;
+  background-color: rgba(196,196,196,0.9);
+  margin-right: 2em;
+  border-top-right-radius: 2em;
+  border-bottom-right-radius: 2em;
+  padding: 1em;
+  padding-left: 24px;
 }
 
 :global .page-footer {

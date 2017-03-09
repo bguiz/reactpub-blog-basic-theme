@@ -22,7 +22,7 @@ let PresentationsPage = React.createClass({
           Presentations by Brendan Graetz
         </h1>
         <div id="page-body" className="page-body">
-          <ul>
+          <ul styleName="presentation-list">
             {presentations.map((presentation) => {
               return (
                 <li
@@ -34,10 +34,10 @@ let PresentationsPage = React.createClass({
                     <div styleName="presentation-item-title">
                       {presentation.meta.title}
                     </div>
-                    <div styleName="presentation-item-subtitle">
-                      {presentation.meta.subtitle}
-                    </div>
                   </a>
+                  <div styleName="presentation-item-subtitle">
+                    {presentation.meta.subtitle}
+                  </div>
                 </li>
               );
             })}
@@ -78,5 +78,3 @@ let PresentationsPage = React.createClass({
 });
 
 module.exports = reactCssModules(PresentationsPage, presentationsPageCss);
-
-

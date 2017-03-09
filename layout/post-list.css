@@ -1,4 +1,7 @@
-.post-list {}
+.post-list {
+  margin-left: 1em;
+  margin-right: 1em;
+}
 
 .post-list-item {
   position: relative;

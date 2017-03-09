@@ -5,5 +5,18 @@
 }
 
 .markdown-render ul {
+  padding-left: 2em;
+}
+
+.markdown-render *:not(pre):not(img) {
+  margin-top: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 36em;
+}
+
+.markdown-render pre, .markdown-render img {
+  max-width: 100%;
   margin-left: 1em;
+  margin-right: 1em;
 }

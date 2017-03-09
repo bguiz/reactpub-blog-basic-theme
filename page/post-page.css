@@ -1,9 +1,22 @@
 .page-title {
-  margin-top: 1.2em;
-  margin-bottom: 0.6em;
+  margin-bottom: 0.2em;
+}
+
+.post-headImage {
+  max-width: 100%;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
 .post-date {
-  font-size: 18px;
-  color: #999;
+  font-size: 0.9em;
+  color: rgba(156,156,156,1);
+  margin-top: 0.2em;
+  margin-bottom: 1em;
+  background-color: rgba(128,128,128,0.1);
+  margin-right: 6em;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+  padding: 0.5em;
+  padding-left: 24px;
 }

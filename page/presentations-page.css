@@ -1,5 +1,11 @@
+.presentation-list {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
 .presentation-item {
-  margin-top: 0.5em;
+  margin-top: 0.3em;
+  margin-bottom: 0.9em;
 }
 
 .presentation-item-title {

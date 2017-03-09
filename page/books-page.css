@@ -1,5 +1,11 @@
+.book-list {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
 .book-item {
-  margin-top: 0.5em;
+  margin-top: 0.3em;
+  margin-bottom: 0.9em;
 }
 
 .book-item-title {
