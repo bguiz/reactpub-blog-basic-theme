@@ -28,6 +28,11 @@ function getWebpackConfig(options) {
       from: 'node_modules/font-awesome/css',
       to: '3rd-party/font-awesome/css',
       force: true,
+    },
+    {
+      from: 'node_modules/highlight.js/styles/dracula.css',
+      to: '3rd-party/highlight-js/css/dracula.css',
+      force: true,
     }
   ], {
     ignore: [

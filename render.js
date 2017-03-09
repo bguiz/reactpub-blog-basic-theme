@@ -27,6 +27,8 @@ function themeRender() {
     appCss: 'app.css',
     vendorFontAwesomeCss:
       '3rd-party/font-awesome/css/font-awesome.min.css',
+    vendorHighlightJsCss:
+      '3rd-party/highlight-js/css/dracula.css',
   };
 
   return reactpubEntry({
